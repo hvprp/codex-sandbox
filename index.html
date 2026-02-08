@@ -2,15 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hi, I'm Henry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Henry &amp; Sarah | Santa Barbara Wedding</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Trebuchet MS", "Comic Sans MS", "Segoe Print", "Bradley Hand",
+        "Apple Chancery", "Marker Felt", sans-serif;
+      background: #fdf7f1;
+      color: #24313f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 48px 20px 80px;
+      background: radial-gradient(circle at top, #fff6e7, #f7ede0 55%, #e9d9cc);
+    }
+
+    .card {
+      max-width: 980px;
+      width: min(980px, 100%);
+      background: #fffdf9;
+      border: 3px solid #24313f;
+      border-radius: 24px;
+      padding: 32px 36px 40px;
+      box-shadow: 0 28px 50px rgba(36, 49, 63, 0.12);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      margin: 0 0 12px;
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .content {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items: center;
+    }
+
+    .message {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      padding: 18px 20px;
+      border-radius: 18px;
+      border: 2px dashed #24313f;
+      background: #fef7ee;
+    }
+
+    .message strong {
+      font-size: 1.2rem;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      max-height: 420px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Henry</h1>
-  <p>Here are three things about me:</p>
-  <ul>
-    <li>I enjoy learning new skills and technologies.</li>
-    <li>I like reading books and exploring outdoors.</li>
-    <li>I'm always curious about how things work.</li>
-  </ul>
+  <main class="card">
+    <header>
+      <h1>Henry &amp; Sarah&#39;s Santa Barbara Wedding</h1>
+      <p>We&#39;re walking into our next adventure together on the beach.</p>
+    </header>
+
+    <section class="content">
+      <div class="message">
+        <p><strong>Welcome to our wedding page!</strong></p>
+        <p>
+          We&#39;re Henry and Sarah, and we can&#39;t wait to celebrate our Santa Barbara
+          wedding with you. Grab your flip-flops, bring your biggest smile, and
+          get ready for sun, surf, and love.
+        </p>
+      </div>
+
+      <figure aria-label="Hand drawn style illustration of Henry and Sarah walking on the beach">
+        <svg viewBox="0 0 520 420" role="img" aria-labelledby="drawing-title drawing-desc">
+          <title id="drawing-title">Henry and Sarah walking on Santa Barbara beach</title>
+          <desc id="drawing-desc">
+            A hand drawn style illustration of Henry with a surfboard and Sarah in a cute
+            beach outfit walking away from the viewer toward the ocean.
+          </desc>
+          <rect width="520" height="420" fill="#fefaf3"/>
+          <path d="M0 280 C120 250 240 310 360 270 C440 245 520 270 520 270 L520 420 L0 420 Z" fill="#f7d4b5"/>
+          <path d="M0 300 C120 265 240 330 360 292 C440 270 520 295 520 295 L520 420 L0 420 Z" fill="#f2c4a2"/>
+          <path d="M0 235 C120 210 240 250 360 220 C450 200 520 212 520 212" fill="none" stroke="#7bb7d9" stroke-width="5" stroke-linecap="round"/>
+          <path d="M0 210 C120 185 240 230 360 195 C450 175 520 188 520 188" fill="none" stroke="#8fd0f3" stroke-width="4" stroke-linecap="round"/>
+          <path d="M60 120 C120 70 190 60 250 90 C290 65 360 70 410 125" fill="none" stroke="#f3c6c6" stroke-width="6" stroke-linecap="round"/>
+          <path d="M250 90 C270 120 265 155 250 175" fill="none" stroke="#f3c6c6" stroke-width="6" stroke-linecap="round"/>
+
+          <path d="M140 250 L200 210 L220 230 L155 265 Z" fill="#fef7ee" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M156 270 C175 285 200 310 205 335" fill="none" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <path d="M170 275 L155 320" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <path d="M194 245 L210 285" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="190" cy="200" r="14" fill="#f8e0c8" stroke="#24313f" stroke-width="3"/>
+          <path d="M176 195 L195 180 L205 192" fill="none" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+          <path d="M182 206 L200 203" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+
+          <path d="M265 240 L315 210 L335 240 L280 265 Z" fill="#fdf2d7" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M280 270 C305 300 320 325 325 345" fill="none" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <path d="M275 275 L265 320" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <path d="M300 245 L315 295" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="295" cy="202" r="12" fill="#f5d9bf" stroke="#24313f" stroke-width="3"/>
+          <path d="M283 195 L292 185 L305 192" fill="none" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+
+          <path d="M210 235 L260 190" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+          <path d="M310 235 L360 185" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+
+          <path d="M70 260 C100 230 140 210 200 190 L230 210 C200 235 160 260 120 280 Z" fill="#7fc7e8" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M120 280 C130 300 135 320 135 340" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="120" cy="290" r="6" fill="#fef7ee" stroke="#24313f" stroke-width="2"/>
+          <path d="M245 245 C265 260 285 265 305 258" stroke="#f1b3b3" stroke-width="5" stroke-linecap="round"/>
+          <path d="M235 260 C255 285 275 300 300 315" stroke="#d9a56e" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </figure>
+    </section>
+  </main>
 </body>
 </html>

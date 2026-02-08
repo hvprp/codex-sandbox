@@ -2,15 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hi, I'm Henry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Henry &amp; Sarah | Santa Barbara Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display:wght@500;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      background: #fdf7f1;
+      color: #24313f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 56px 20px 96px;
+      background:
+        radial-gradient(circle at top, rgba(255, 246, 231, 0.95), rgba(247, 237, 224, 0.85) 55%, rgba(233, 217, 204, 0.9)),
+        linear-gradient(120deg, rgba(122, 179, 205, 0.12), rgba(255, 215, 186, 0.18));
+    }
+
+    .card {
+      max-width: 980px;
+      width: min(980px, 100%);
+      background: #fffdf9;
+      border: 2px solid rgba(36, 49, 63, 0.18);
+      border-radius: 28px;
+      padding: 36px 38px 42px;
+      box-shadow: 0 28px 50px rgba(36, 49, 63, 0.12);
+      backdrop-filter: blur(6px);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      font-family: "Playfair Display", "Times New Roman", serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      margin: 0 0 12px;
+      letter-spacing: 0.02em;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin: 0;
+      color: rgba(36, 49, 63, 0.75);
+    }
+
+    .content {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items: center;
+    }
+
+    .message {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      padding: 18px 20px;
+      border-radius: 18px;
+      border: 2px dashed rgba(36, 49, 63, 0.35);
+      background: #fef7ee;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+    }
+
+    .message strong {
+      font-size: 1.2rem;
+      font-family: "Handlee", "Comic Sans MS", cursive;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 18px;
+    }
+
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #24313f;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 12px 24px rgba(36, 49, 63, 0.18);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px rgba(36, 49, 63, 0.22);
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      max-height: 420px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Henry</h1>
-  <p>Here are three things about me:</p>
-  <ul>
-    <li>I enjoy learning new skills and technologies.</li>
-    <li>I like reading books and exploring outdoors.</li>
-    <li>I'm always curious about how things work.</li>
-  </ul>
+  <main class="card">
+    <header>
+      <h1>Henry &amp; Sarah&#39;s Santa Barbara Wedding</h1>
+      <p>We&#39;re walking into our next adventure together on the beach.</p>
+      <nav class="nav" aria-label="Wedding site">
+        <a href="about.html">Meet Henry &amp; Sarah</a>
+      </nav>
+    </header>
+
+    <section class="content">
+      <div class="message">
+        <p><strong>Welcome to our wedding page!</strong></p>
+        <p>
+          We&#39;re Henry and Sarah, and we can&#39;t wait to celebrate our Santa Barbara
+          wedding with you. Grab your flip-flops, bring your biggest smile, and
+          get ready for sun, surf, and love.
+        </p>
+      </div>
+
+      <figure aria-label="Hand drawn style illustration of Henry and Sarah walking on the beach">
+        <svg viewBox="0 0 520 420" role="img" aria-labelledby="drawing-title drawing-desc">
+          <title id="drawing-title">Henry and Sarah walking on Santa Barbara beach</title>
+          <desc id="drawing-desc">
+            A hand drawn style illustration of Henry with a surfboard and Sarah in a cute
+            beach outfit walking away from the viewer toward the ocean.
+          </desc>
+          <rect width="520" height="420" fill="#fdf6ed"/>
+          <path d="M0 120 C90 95 180 120 260 108 C340 98 420 82 520 105 L520 0 L0 0 Z" fill="#bfe3f0"/>
+          <path d="M0 140 C120 120 250 150 360 128 C440 115 500 120 520 125 L520 80 L0 80 Z" fill="#a7d3e7" opacity="0.85"/>
+          <path d="M0 200 C120 170 260 205 360 182 C450 165 500 170 520 175 L520 120 L0 120 Z" fill="#8fc3dd" opacity="0.8"/>
+
+          <path d="M0 240 C80 220 140 210 220 215 C320 220 420 200 520 210 L520 280 L0 280 Z" fill="#8fbfdd"/>
+          <path d="M0 255 C90 235 170 230 240 235 C330 242 430 228 520 235 L520 300 L0 300 Z" fill="#7fb6d3"/>
+          <path d="M0 270 C110 250 200 250 280 258 C360 265 450 255 520 262 L520 320 L0 320 Z" fill="#6eaac8"/>
+
+          <path d="M0 285 C120 260 220 275 320 268 C400 262 460 268 520 272 L520 420 L0 420 Z" fill="#f2caa5"/>
+          <path d="M0 320 C120 295 220 315 320 310 C400 305 460 315 520 318 L520 420 L0 420 Z" fill="#e9b98e"/>
+
+          <path d="M40 205 C90 175 145 168 205 180" fill="none" stroke="#f2f7fb" stroke-width="6" stroke-linecap="round"/>
+          <path d="M90 225 C150 198 210 195 280 205" fill="none" stroke="#e7f2f8" stroke-width="4" stroke-linecap="round"/>
+          <path d="M270 220 C330 200 400 198 470 210" fill="none" stroke="#e7f2f8" stroke-width="4" stroke-linecap="round"/>
+          <path d="M60 250 C110 235 170 235 240 242" fill="none" stroke="#f5fbff" stroke-width="3" stroke-linecap="round"/>
+
+          <path d="M310 185 L330 170 L355 190 L335 205 Z" fill="#f8d0a6" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M330 205 L338 245 L322 250 L316 210 Z" fill="#f3a871" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M322 250 L318 295" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <path d="M335 248 L340 295" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="332" cy="168" r="11" fill="#f6d4b9" stroke="#24313f" stroke-width="3"/>
+          <path d="M324 163 L335 156 L344 162" fill="none" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+
+          <path d="M360 190 L382 175 L410 200 L380 215 Z" fill="#7ecdbb" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M380 215 L390 250 L365 255 L360 225 Z" fill="#5bb4a2" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M370 255 L365 295" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <path d="M387 252 L392 295" stroke="#24313f" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="385" cy="170" r="10" fill="#f2cdb0" stroke="#24313f" stroke-width="3"/>
+          <path d="M376 166 L384 156 L396 166" fill="none" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+          <path d="M340 210 L360 205" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+
+          <path d="M250 210 C270 190 300 178 330 170 L350 188 C320 205 295 220 260 235 Z" fill="#5fb2d3" stroke="#24313f" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M270 230 C275 255 278 280 280 305" stroke="#24313f" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="280" cy="235" r="6" fill="#fef7ee" stroke="#24313f" stroke-width="2"/>
+
+          <path d="M285 305 C315 320 350 325 390 320" fill="none" stroke="#c68b56" stroke-width="5" stroke-linecap="round"/>
+          <path d="M300 315 C330 335 360 345 400 348" fill="none" stroke="#d8a56f" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </figure>
+    </section>
+  </main>
 </body>
 </html>
